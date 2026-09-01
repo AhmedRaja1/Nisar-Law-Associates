@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="googleGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e8e3e" />
+      <stop offset="100%" stop-color="#137333" />
+    </linearGradient>
+    <linearGradient id="googleBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a73e8" />
+      <stop offset="100%" stop-color="#1557b0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Crest & Emblem Group -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Ring -->
+    <circle cx="50" cy="50" r="46" fill="#f8fcf9" stroke="url(#googleGreenGrad)" stroke-width="2.5" />
+    <circle cx="50" cy="50" r="41" fill="none" stroke="#1e8e3e" stroke-width="1" stroke-dasharray="2,2" opacity="0.6"/>
+
+    <!-- Scales of Justice (Vector Art) -->
+    <!-- Center Pillar & Stand -->
+    <path d="M50 20 L50 78 M38 78 L62 78 M42 82 L58 82" stroke="#137333" stroke-width="2.8" stroke-linecap="round"/>
+    <circle cx="50" cy="20" r="3.5" fill="#1e8e3e" />
+    
+    <!-- Top Beam -->
+    <path d="M24 32 Q50 28 76 32" stroke="#137333" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="24" cy="32" r="2" fill="#137333"/>
+    <circle cx="76" cy="32" r="2" fill="#137333"/>
+
+    <!-- Left Scale Pan -->
+    <line x1="24" y1="32" x2="16" y2="52" stroke="#1e8e3e" stroke-width="1.2"/>
+    <line x1="24" y1="32" x2="32" y2="52" stroke="#1e8e3e" stroke-width="1.2"/>
+    <path d="M14 52 Q24 60 34 52 Z" fill="#1e8e3e" opacity="0.85"/>
+
+    <!-- Right Scale Pan -->
+    <line x1="76" y1="32" x2="68" y2="52" stroke="#1e8e3e" stroke-width="1.2"/>
+    <line x1="76" y1="32" x2="84" y2="52" stroke="#1e8e3e" stroke-width="1.2"/>
+    <path d="M66 52 Q76 60 86 52 Z" fill="#1e8e3e" opacity="0.85"/>
+
+    <!-- Laurel Leaves Accent -->
+    <path d="M18 72 C12 60 14 44 20 38 C18 48 20 62 26 70" fill="#34a853" opacity="0.6"/>
+    <path d="M82 72 C88 60 86 44 80 38 C82 48 80 62 74 70" fill="#34a853" opacity="0.6"/>
+
+    <!-- Banner Base -->
+    <path d="M26 84 L74 84 L70 91 L50 88 L30 91 Z" fill="#137333"/>
+    <text x="50" y="88.5" font-family="'Google Sans', 'Poppins', 'Segoe UI', sans-serif" font-size="5" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">EST. 2014</text>
+  </g>
+
+  <!-- Typography Group -->
+  <g transform="translate(125, 20)">
+    <!-- Main Title -->
+    <text x="0" y="42" font-family="'Google Sans', 'Plus Jakarta Sans', 'Poppins', 'Segoe UI', sans-serif" font-size="33" font-weight="800" fill="#137333" letter-spacing="-0.5">
+      NISAR LAW <tspan fill="#1e8e3e">ASSOCIATES</tspan>
+    </text>
+    <!-- Subtitle -->
+    <text x="2" y="68" font-family="'Plus Jakarta Sans', 'Poppins', 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#5f6368" letter-spacing="2.6">
+      ADVOCATES &amp; LEGAL CONSULTANTS
+    </text>
+    <!-- Accent Line with Google Dots -->
+    <rect x="2" y="78" width="70" height="3" rx="1.5" fill="#1a73e8"/>
+    <circle cx="82" cy="79.5" r="2.5" fill="#ea4335" />
+    <circle cx="92" cy="79.5" r="2.5" fill="#fbbc04" />
+    <circle cx="102" cy="79.5" r="2.5" fill="#34a853" />
+  </g>
+</svg>
