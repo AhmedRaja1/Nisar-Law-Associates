@@ -397,14 +397,15 @@ window.closeCardModal = function() {
   }
 };
 
-/* ---------------- Scroll Spy for Nav Highlighting ---------------- */
+/* ---------------- Scroll Spy for Desktop Nav & Mobile App Dock Highlighting ---------------- */
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  const desktopNavLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  const dockItems = document.querySelectorAll('.dock-item[data-nav]');
 
-  window.addEventListener('scroll', () => {
+  function updateActiveNav() {
     let current = '';
-    const scrollPosition = window.scrollY + 160;
+    const scrollPosition = window.scrollY + 180;
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
@@ -414,11 +415,26 @@ function initScrollSpy() {
       }
     });
 
-    navLinks.forEach(link => {
+    if (!current && window.scrollY < 180) {
+      current = 'home';
+    }
+
+    desktopNavLinks.forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href') === `#${current}`) {
         link.classList.add('active');
       }
     });
-  });
+
+    dockItems.forEach(item => {
+      item.classList.remove('active');
+      const navTarget = item.getAttribute('data-nav');
+      if (navTarget === current) {
+        item.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
 }
